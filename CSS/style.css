@@ -1,0 +1,235 @@
+body {
+    font-family: 'Montserrat', sans-serif; /*todo o site ficará com esta fonte*/
+}
+
+header {
+	background: #FFFFFF;
+	padding: 0 0;}	/* Espaçamento interno */
+
+.banner {
+	width: 100%;
+}
+
+p {
+	text-align: center;
+}
+
+.caixa {
+	position: relative;
+	width: 940px; /* configuração padrão para a web */
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 100px;
+	right: 0;
+}
+
+nav li {
+	display: inline;	/* Desbloqueio de 100% do conteúdo na horizontal (algo mais pode ser adicionado ao lado) */
+	margin: 0 0 0 15px}
+
+nav a {
+	text-transform: uppercase;	/* O texto fica todo em maiúsculo */
+	color: #000000;
+	font-weight: bold;	/* A cor do texto fica em negrito */
+	font-size: 22px;	/* Tamanho da fonte (padrão 16) */
+	text-decoration: none;}	/* Retirar as configurações padrões de link */
+
+nav a:hover {	/* Comando para mudar a cor do link quando o cursor passar por cima dele */
+	color: #C78C19;
+	text-decoration: underline;	/* Para retornar o sublinhado quando o cursor passar por cima do link */
+}
+
+.diferencial {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;	/* 50px espaçamento interno superior e inferior, 0 laterais */
+}
+
+.diferencial li {
+	display: inline-block;
+	text-align: center;	/* Texto alinhado ao centro */
+	width: 30.7%;	/* Tamanho de cada banner */
+	vertical-align: top;
+	margin: 0 1.1%;	/* Espaçamento externo vertical e horizontal */
+	padding: 30px 20px;	/* Espaçamento interno vertical e horizontal */
+	box-sizing: border-box;	/* Espaçamento lateral dentro do percentual */
+	border: 2px solid #000000;	/* Isso é igual a: border-width; border-style; border-color; */
+	border-radius: 10px;	/* Medida de "arredondamento" do quadrado. será a medida em raios que irei adc nas bordas */
+}
+
+.diferencial li:hover {	/* Quando o cursor passar por cima */
+	border-color: #C78C19;
+}
+
+.diferencial li:hover h2 {
+	font-size: 27px;
+}
+
+.diferencial li:active {	/* Quando o cursor for clicado */
+	border-color: #088C19;
+}
+
+.diferencial h2 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.textodiferencial {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	background: #C5C1C0;
+	padding: 5px 0;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.copyright {
+	color: #000000;
+	font-size: 13px;
+	margin: 0 0 0 0;
+}
+
+form {
+	margin: 40px 20px;
+}
+
+fieldset {
+	border: none;
+}
+
+form label, form legend, p {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: grey;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.enviar:hover {
+	background: darkgrey;
+	transform: scale(1.2); /*1.2 = 20%*/
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+/*css da pagina inicial*/
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em; /*em é a medida proporcional para pixels. */
+	margin: 0 0 1.0em; /*espaçamento para baixo no tamanho proporcional ao tamanho da fonte*/
+	clear: left; /* "barreira" que criamos para o float, para não afetar os demais conteúdos da página*/
+	color: #000000;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE; /*quase branco*/
+    width: 940px;
+	margin: 0 auto;
+} 
+
+.principal p{
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.quemsomos {
+    width: 150px;
+    float: left; /* Float é utilizado para deixar o texto "rodeando" uma imagem*/
+    margin: 0 20px 40px 0; /*Para cima, para direita, para baixo, para a esquerda*/
+    border-radius: 10px;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.quemsomos:hover {
+	opacity: 0.3;
+}
+
+.honorarios {
+	margin-top: 60px;
+}
+
+@media screen and (max-width: 480px) { 
+	.caixa, .principal, {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.diferencial {
+		width: auto;
+		text-align: center;
+	}
+
+	.diferencial li {		
+		width: 90%;
+		margin-bottom: 10px;
+		align-items: center;
+	}
+
+	.enviar {
+		font-size: 1em;
+	}
+
+}
